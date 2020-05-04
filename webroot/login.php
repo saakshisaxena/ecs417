@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
         echo 'success <br><br>' ;
         $_SESSION['name'] = $row["name"];
         echo "<h3>Welcome ".$_SESSION['name']." :) </h4>";
-        header("refresh:2; url=addpost.html");
+        header("refresh:2; url=addPost.html");
         $actiondone = true;
       }
 
