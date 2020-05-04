@@ -1,13 +1,13 @@
 
 
 /**<!-- ADD THE POPUP FOR OK OR CANCEL WHEN CLEAR IS PRESSED -->**/
-/*input:valid {
+input:valid {
   background-color: #ddffdd;
 }
 textarea:valid:required {
   background-color: #ddffdd;
 }
-
+/*
 
 textarea:invalid{
   box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
