@@ -1,0 +1,232 @@
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0%;
+}
+/* For parallax effect ... put div class="parallax"....... write stuff........</div> then make another div
+to extend its effect like <div class=" parallax"></div> ...dont write anything in this div*/
+.parallax {
+  /* The image used */
+  background-image: url('');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.bg-dark {
+    background-color: transparent !important;
+}
+
+ul {
+  font-size: medium;
+}
+
+#left {
+  background-image: url("https://i.pinimg.com/736x/bd/23/16/bd2316a1967393783cb0ba3bf6f51b0a.jpg");
+}
+
+#left a {
+  color: grey;
+}
+
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border: 2px double rgb(100, 100, 153);
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 105px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+#aboutme, #skills, #portfolio, #edu, #experience, #blog {
+  margin: 5%;
+  border: 2px solid black;
+  padding: 25px;
+  margin-left: 10%;
+  margin-right: 2%;
+  height: 175vh;
+  width: 150vh;
+  background-size: contain;
+}
+
+#aboutme {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#edu {
+  background: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*height: 150vh;*/
+}
+
+#skills {
+  background: url("https://www.incimages.com/uploaded_files/image/970x450/shutterstock_781606792_360874.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio {
+  background:  url("https://www.elegantthemes.com/blog/wp-content/uploads/2016/08/best-portfolio-wordpress-themes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#experience {
+  background:  url("https://knowledge.wharton.upenn.edu/wp-content/uploads/2016/12/NTT-DATA-Omnichannel-Featured-Image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blog {
+  background:  url("https://thepbsblog.files.wordpress.com/2015/12/blog-laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 50%;
+  background-blend-mode: color-dodge;
+  text-align: left;
+  /* float:left;
+width:1000px;
+overflow-y: auto;
+height: 100px;*/
+
+}
+#blog h4, h2 {
+  text-align: center;
+}
+
+table {
+  margin-left: 10%;
+  font-size: 70%;
+}
+
+button {
+  margin-left: 50%;
+}
+
+button a {
+  color: black;
+}
+
+#last {
+/*Footer not working */
+  bottom: 0;
+  width: 644px;
+  height: 20px;
+  margin-left: 25%;
+}
+
+
+
+
+
+
+ body {
+  font-size: 200%;
+  text-align: center;
+background-image: url("");
+  background: cover;
+  background-size: 200%;
+  font-family: 'Liu Jian Mao Cao', cursive;
+
+}
+
+/*.container {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+} */
+
+
+
+
+
+article {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3%;
+  background-image: url("");
+  background-repeat: no-repeat;
+
+
+}
+
+section{
+
+  margin: 3%;
+}
+
+aside {
+  margin: 3%;
+  position: absolute;
+  top:0;
+  right: 0;
+  background-image: url("");
+  background: cover;
+  background-repeat:  round;
+
+}
+
+
+footer {
+  background-color: transparent;
+  margin: 10%;
+    z-index: 1;
+    position: relative;
+font-size: 75%;
+
+}

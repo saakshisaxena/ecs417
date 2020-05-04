@@ -1,0 +1,75 @@
+
+
+/**<!-- ADD THE POPUP FOR OK OR CANCEL WHEN CLEAR IS PRESSED -->**/
+/*input:valid {
+  background-color: #ddffdd;
+}
+textarea:valid:required {
+  background-color: #ddffdd;
+}
+
+
+textarea:invalid{
+  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+  background-color: #ffdddd;
+}
+input:invalid {
+  background-color: #ffdddd;
+  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+}
+input:invalid:required{
+  border-color: rgba(200, 0, 0, 0.85);
+}
+textarea:invalid:required{
+  border-color: rgba(200, 0, 0, 0.85);
+}WHAT IS THE DIFFERENCE BETWEEN THIS ONE AND THE ONE ABOVE
+
+input:required:invalid {
+  border-color: #c00000;
+}
+textarea:required:invalid {
+  border-color: #c00000;
+}
+*/
+
+
+body {
+  text-align: center;
+  padding: 10%;
+  margin: 1%;
+}
+
+form {
+  background-color: skyblue;
+  padding: 2%;
+}
+
+button {
+  background-color: #4477b2;
+  color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 100%;
+}
+
+fieldset {
+  border: 0;
+  text-align: center;
+}
+
+legend {
+  color: white;
+  font-size: 200%;
+}
+
+.btn-primary {
+  background-color: #4477b2;
+  padding-left: 6%;
+  padding-right: 6%;
+  border-radius: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}

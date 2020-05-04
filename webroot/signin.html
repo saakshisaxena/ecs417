@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Signin </title>
+    <link rel="alternate.stylesheet" type="text/css" href="reset.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <!-- add this to the css thing to make it phone etc responsive @media only screen and (max-width: 480px) {...} -->
+
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <form method="Post" action="signin.php">
+        <fieldset>
+          <legend> <strong>Signin</strong></legend>
+          <br>
+          <div class="form-group">
+            <input type="" name="name" class="form-control" placeholder="Name" required>
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <input type="password" name="pwd" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Signin</button>
+        </fieldset>
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  padding: 10%;
+  margin: 5%;
+}
+
+form {
+  background-color: #f2be00;
+  padding: 6%;
+}
+
+button {
+  background-color: #4477b2;
+  color: white;
+  padding: 5%;
+  font-size: 100%;
+
+}
+
+fieldset {
+  border: 0;
+  text-align: center;
+}
+
+legend {
+  color: white;
+  font-size: 200%;
+}
+
+.btn-primary {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #4477b2;
+  border-radius: 0;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
