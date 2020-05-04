@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2020 at 04:41 PM
+-- Generation Time: May 04, 2020 at 04:47 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -66,6 +66,50 @@ INSERT INTO `blog` (`date`, `time`, `title`, `text`) VALUES
 ('2020-05-03', '15:07:19', 'test again', 'test\r<br />for\r<br />enter\r<br />............'),
 ('2020-05-03', '15:08:35', 'Pandemic', 'A pandemic (from Greek πᾶν, pan, \"all\" and δῆμος, demos, \"people\") is an epidemic of disease that has spread across a large region, for instance multiple continents or worldwide, affecting a substantial number of people.\r<br /> A widespread endemic disease with a stable number of infected people is not a pandemic.\r<br /> Widespread endemic diseases with a stable number of infected people such as recurrences of seasonal influenza are generally excluded as they occur simultaneously in large regions of the globe rather than being spread worldwide.'),
 ('2020-05-03', '17:06:34', 'One of final tests', 'Hello new view page :DDDDDDD');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `pwd` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `name`, `email`, `pwd`) VALUES
+(4, 'saakshi', 'saakshi.saxena2000@gmail.com', 'saak'),
+(5, '', '', ''),
+(6, '', '', ''),
+(7, 'Akshath Saxena', 'akshath.saxena.2004@gmail.com', 'akshath'),
+(8, 'Jaya', 'jayasaxena78@gmail.com', 'saakshiPass1!');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `login`
+--
+ALTER TABLE `login`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
