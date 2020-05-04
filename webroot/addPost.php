@@ -1,11 +1,13 @@
 <?php
 
 
-$user = 'root';
-$password='';
-$db='miniprojectdb';
+$servername = getenv("MYSQL_SERVICE_HOST");
+$username = getenv("DATABASE_USER");
+$password=getenv("DATABASE_PASSWORD");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$db=getenv("DATABASE_NAME");
 
-$conn = new mysqli('localhost', $user, $password, $db);
+$conn = new mysqli($servername, $username, $password, $db);
 //echo "gReat work :DD";
 // Check connection
 if ($conn->connect_error) {
