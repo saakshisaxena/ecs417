@@ -13,6 +13,7 @@
     if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     }
+    ob_start();
 ?>
 
 
@@ -167,9 +168,10 @@
 
       } else {
           echo "0 results <br> Redirecting to login page.";
-          header("Location: addPost.html");
+          header("refresh:2; url=login.html");
           exit();
       }
+      ob_end_flush();
         ?> </p>
       <a style="font-size: 125%;" href="addPost.html"> <strong>Add a post</strong> </a>
 
