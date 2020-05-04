@@ -167,7 +167,7 @@
 
       } else {
           echo "0 results <br> Redirecting to login page.";
-          header("Location: http://www.example.com/another-page.php");
+          header("Location: addPost.php");
           exit();
       }
         ?> </p>
