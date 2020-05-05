@@ -43,7 +43,8 @@ echo str_replace("\n","<br />",$blogtext;
 
      } else {
 
-     echo "Error: " . $sql . "<br>" . $conn->error."<br> <h4>Blog not saved!</h4>";
+     echo "Error: " . $sql . "<br>" . $conn->error."<br> <h4>Blog not saved!</h4> If a single quote is used, replace it with a double quote.";
+     header("refresh:10; url=viewBlog.php");
     }
 
     $conn->close();
