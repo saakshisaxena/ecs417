@@ -1,4 +1,25 @@
+document.getElementById('button').addEventListener('click', function() {
+document.querySelector('.bg-model').style.display='flex';
+const searchRegExp = /\n/g;
+const replaceWith = '<br>';
+var title= document.getElementById("title").value;
+title = title.replace(searchRegExp, replaceWith);
+var post = document.getElementById("textarea").value;
+post = post.replace(searchRegExp, replaceWith);
+var currentdate = new Date();
+const options = {  day: 'numeric', month: 'long', year: 'numeric'};
+var datetime = "<br> &#128336; " +currentdate.toLocaleDateString(undefined, options)+ "&nbsp;&nbsp;&nbsp;" + currentdate.getHours() + ":"
++ currentdate.getMinutes() + " UTC";
+document.querySelector('.form-content').innerHTML = "<p class='dandt'>"+ datetime + " <br> <p class='title'><strong>"+title+"</strong></p><br><em>"+post+"</em>";
+});
 
+document.querySelector('.close').addEventListener('click', function() {
+  document.querySelector('.bg-model').style.display='none';
+});
+
+document.getElementById('goback').addEventListener('click', function() {
+document.querySelector('.bg-model').style.display='none';
+});
 
 function resetfunction() {
   var confirmation = window.confirm("This article will not be saved once cleared. \n \'OK\' to continue \n \'Cancel\' to discontinue");
@@ -30,7 +51,7 @@ function preventDefault() {
   }
 }
 
-function previewfunc() {
+/*function previewfunc() {
   var title= document.getElementById("title").value;
   var post = document.getElementById("textarea").value;
 /*  let newDiv = document.createElement('div');
@@ -39,13 +60,13 @@ function previewfunc() {
   newDiv.setAttribute('title','hello div');
   let newDivText = document.createTextNode('<strong>Title:</strong>"+ title +" \n <strong>Post:</strong>"+ post');
   newDiv.appendChild(newDivText);*/
-  if(preventDefault())
+/*  if(preventDefault())
   {
 
     document.write("<h4> Preview of your post. </h4><strong>Title:</strong> <strong><em>"+ title +"</em></strong> <br><br> <strong>Post: </strong> <em>"+ post +"</em>  ");
 
   }
-}
+}*/
 
 function goBack() {
   window.history.back();

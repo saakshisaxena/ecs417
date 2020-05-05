@@ -152,7 +152,7 @@
       </nav>
   </header>
     <div id="blog" class="overflow-auto" >
-      <h2> Blog</h2>
+      <h2>Welcome to my Blog &#128522;</h2>
       <p> <?php //USE prepared statements.......use placeholders
       $sql = "SELECT * FROM blog ORDER BY date ASC, time DESC ;";
       $result = $conn->query($sql);
@@ -163,7 +163,7 @@
           while($row = $result->fetch_assoc()) {
             if(! ($row["text"] == null)){
               $newdate= date("jS M Y, ", strtotime($row["date"]));
-              $newtime= date("h:i ", strtotime($row["time"]));
+              $newtime= date("H:i ", strtotime($row["time"]));
               echo /*" <strong> Date:</strong> "*/"<p>&#128336; " . $newdate./* " <strong> Time:</strong> " .*/ $newtime." UTC </p> <br> <strong>" . $row["title"]. "</strong><br>";
               echo " <em> " . $row["text"]. "</em><br>". "<br><hr> <br>";
 
@@ -177,7 +177,7 @@
       }
       ob_end_flush();
         ?> </p>
-      <a style="font-size: 125%;" href="addPost.html"> <strong>Add a post</strong> </a>
+      <a style="font-size: 140%;" href="addPost.html"> <strong>Add a post</strong> </a>
 
     </div>
   </body>
