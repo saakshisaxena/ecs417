@@ -10,7 +10,7 @@ var currentdate = new Date();
 const options = {  day: 'numeric', month: 'long', year: 'numeric'};
 var datetime = "<br> &#128336; " +currentdate.toLocaleDateString(undefined, options)+ "&nbsp;&nbsp;&nbsp;" + currentdate.getHours() + ":"
 + currentdate.getMinutes() + " UTC";
-document.querySelector('.form-content').innerHTML = "<p class='dandt'>"+ datetime + " <br> <p class='title'><strong>"+title+"</strong></p><br><em>"+post+"</em>";
+document.querySelector('.form-content').innerHTML = "<p class='dandt'>"+ datetime + " <br> <p class='title'><strong>"+title+"</strong></p><em>"+post+"</em>";
 });
 
 document.querySelector('.close').addEventListener('click', function() {
