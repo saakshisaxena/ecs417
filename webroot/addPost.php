@@ -16,7 +16,7 @@ die("Connection failed: " . $conn->connect_error);
 }
 
 
-$currentdate = gmdate("Y.m.d");
+$currentdate = gmdate("d.m.Y");
 
 $currenttime = gmdate("H:i:s");
 
