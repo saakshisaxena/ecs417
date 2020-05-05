@@ -43,7 +43,7 @@ $correctblog= str_replace("\n","<br />",$blogtext);
 
      } else {
 
-     echo "Error: " . $sql . "<br>" . $conn->error;
+     echo "Error: " . $sql . "<br>" . $conn->error."<br> Blog not saved!";
     }
 
     $conn->close();
