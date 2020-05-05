@@ -27,8 +27,8 @@ $correcttitle= str_replace("'","\'",$title);
 
 $blogtext = $_POST['blogtext'];
 
-$correctblog= str_replace("'","\`",$blogtext);
-$correctblog= str_replace("`","\`",$blogtext);
+$correctblog= str_replace("'","\"",$blogtext);
+$correctblog= str_replace("`","\"",$blogtext);
 $correctblog= str_replace("\n","<br />",$blogtext);
 
 
@@ -43,7 +43,7 @@ $correctblog= str_replace("\n","<br />",$blogtext);
 
      } else {
 
-     echo "Error: " . $sql . "<br>" . $conn->error."<br> Blog not saved!";
+     echo "Error: " . $sql . "<br>" . $conn->error."<br> <h4>Blog not saved!</h4>";
     }
 
     $conn->close();
