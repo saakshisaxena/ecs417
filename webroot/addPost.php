@@ -27,7 +27,8 @@ $correcttitle= str_replace("'","\'",$title);
 
 $blogtext = $_POST['blogtext'];
 
-$correctblog= str_replace("'","\'",$blogtext);
+$correctblog= str_replace("'","\`",$blogtext);
+$correctblog= str_replace("`","\`",$blogtext);
 $correctblog= str_replace("\n","<br />",$blogtext);
 
 
