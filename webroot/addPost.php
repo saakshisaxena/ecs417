@@ -28,6 +28,7 @@ $correcttitle= str_replace("'","\'",$title);
 $blogtext = $_POST['blogtext'];
 
 $correctblog= str_replace("'","\'",$blogtext);
+$correctblog= str_replace("\n","<br>",$correctblog);
 
 
  //To add an intry in the table in our database
