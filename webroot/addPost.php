@@ -27,10 +27,8 @@ $correcttitle= str_replace("'","\'",$title);
 
 $blogtext = $_POST['blogtext'];
 
-$correctblog= str_replace("'","\"",$blogtext);
-$correctblog= str_replace("`","\"",$blogtext);
-$correctblog= str_replace("\n","<br />",$blogtext);
-echo str_replace("\n","<br />",$blogtext);
+$correctblog= str_replace("'","\'",$blogtext);
+
 
  //To add an intry in the table in our database
  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -43,7 +41,7 @@ echo str_replace("\n","<br />",$blogtext);
 
      } else {
 
-     echo "Error: " . $sql . "<br>" . $conn->error."<br> <h4>Blog not saved!</h4> If a single quote is used, replace it with a double quote.";
+     echo "Error: " . $sql . "<br>" . $conn->error."<br> <h4>Blog not saved!<br>If a single quote is used, replace it with a double quote.</h4>";
      header("refresh:10; url=viewBlog.php");
     }
 
