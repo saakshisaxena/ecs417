@@ -81,7 +81,7 @@
             padding: 2%;
          }
          body strong {
-           font-size: 150%;
+           font-size: 175%;
            font-family: "Courier New", Courier, monospace;
          }
          .overflow-auto {
