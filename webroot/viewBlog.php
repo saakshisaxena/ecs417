@@ -105,7 +105,9 @@
         nav a {
           text-align: center;
         }
-
+        nav {
+          font-size: 125%;
+        }
 
 
     </style>
