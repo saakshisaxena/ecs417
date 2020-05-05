@@ -30,7 +30,7 @@ $blogtext = $_POST['blogtext'];
 $correctblog= str_replace("'","\"",$blogtext);
 $correctblog= str_replace("`","\"",$blogtext);
 $correctblog= str_replace("\n","<br />",$blogtext);
-
+echo str_replace("\n","<br />",$blogtext;
 
  //To add an intry in the table in our database
  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
