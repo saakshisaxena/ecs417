@@ -23,7 +23,7 @@ $sql = "INSERT INTO login (name, email, pwd) VALUES ('$username', '$email', '$pw
 
 if ($conn->query($sql) === TRUE) {
  echo "<h6>Registration Successful</h6>";
- header("refresh:2; url=addpost.html");
+ header("refresh:2; url=addPost.html");
  } else {
  echo "Error: " . $sql . "<br>" . $conn->error;
 }

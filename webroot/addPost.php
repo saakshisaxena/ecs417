@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 //echo "aww :\(";
 die("Connection failed: " . $conn->connect_error);
 }
-
+echo 'after connection';
 $timezone  = -5; //(GMT -5:00) EST (U.S. & Canada)
 $currentdate = gmdate("Y.m.d", time() + 3600*($timezone+date("I")));
 echo gmdate("Y.m.d", time() + 3600*($timezone+date("I")));
@@ -48,5 +48,5 @@ echo 'before error';
     $conn->close();
   }
 
-header("refresh:2; url=viewBlog.php");
+//header("refresh:2; url=viewBlog.php");
 ?>
