@@ -49,5 +49,5 @@ $correctblog= str_replace("\n","<br />",$blogtext);
     $conn->close();
   }
 
-//header("refresh:2; url=viewBlog.php");
+header("refresh:2; url=viewBlog.php");
 ?>
