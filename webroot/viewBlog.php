@@ -162,8 +162,8 @@
 
           while($row = $result->fetch_assoc()) {
             if(! ($row["text"] == null)){
-
-               $newdate= date("jS M Y, ", strtotime($row["date"]));
+               $newdate= date_format($row["date"],"d.m.Y");
+               $newdate= date("jS M Y, ", $newdate);
                $newtime= date("h:i", strtotime($row["time"]));
               echo /*" <strong> Date:</strong> "*/"<p>&#128336; " . $newdate./* " <strong> Time:</strong> " .*/ $newtime." UTC </p> <br> <strong>" . $row["title"]. "</strong><br>";
               echo " <em> " . $row["text"]. "</em><br>". "<br><hr> <br>";
