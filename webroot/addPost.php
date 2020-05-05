@@ -15,10 +15,10 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 
-$timezone  = -5; //(GMT -5:00) EST (U.S. & Canada)
-$currentdate = gmdate("Y.m.d", time() + 3600*($timezone+date("I")));
 
-$currenttime = gmdate("H:i:s", time() + 3600*($timezone+date("I")));
+$currentdate = gmdate("Y.m.d");
+
+$currenttime = gmdate("H:i:s");
 
 $title = $_POST['title'];
 
