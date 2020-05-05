@@ -1,7 +1,7 @@
 
 
 /**<!-- ADD THE POPUP FOR OK OR CANCEL WHEN CLEAR IS PRESSED -->**/
-input:valid {
+input:valid:required {
   background-color: #ddffdd;
 }
 textarea:valid:required {

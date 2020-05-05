@@ -15,9 +15,10 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 
-$currentdate = date("Y.m.d");
+$timezone  = -5; //(GMT -5:00) EST (U.S. & Canada)
+$currentdate = gmdate("Y.m.d", time() + 3600*($timezone+date("I")));
 
-$currenttime = date("H:i:s");
+$currenttime = gmdate("H:i:s", time() + 3600*($timezone+date("I")));
 
 $title = $_POST['title'];
 
@@ -31,15 +32,17 @@ $correctblog= str_replace("\n","<br />",$blogtext);
 
 
  //To add an intry in the table in our database
-$sql = "INSERT INTO blog (date, time, title, text ) VALUES ('$currentdate', '$currenttime', '$correcttitle', '$correctblog' )" ;
+ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $sql = "INSERT INTO blog (date, time, title, text ) VALUES ('$currentdate', '$currenttime', '$correcttitle', '$correctblog' )" ;
 
-if ($conn->query($sql) === TRUE) {
- echo "<h6>Registration Successful</h6>";
-// <p><a href='exercise1.html'>Home</a></p>";
- } else {
- echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    if ($conn->query($sql) === TRUE) {
+     echo "<h6>Registration Successful</h6>";
+    // <p><a href='exercise1.html'>Home</a></p>";
+     } else {
+     echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
-$conn->close();
+    $conn->close();
+  }
 header("refresh:2; url=viewBlog.php");
 ?>
