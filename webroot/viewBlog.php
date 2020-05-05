@@ -84,6 +84,9 @@
            font-size: 175%;
            font-family: "Courier New", Courier, monospace;
          }
+         body em {
+           font-size: 125%;
+         }
          .overflow-auto {
 
 
