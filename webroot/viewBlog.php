@@ -154,7 +154,7 @@
     <div id="blog" class="overflow-auto" >
       <h2>Welcome to my Blog &#128522;</h2>
       <p> <?php //USE prepared statements.......use placeholders
-      $sql = "SELECT * FROM blog ORDER BY date ASC, time DESC ;";
+      $sql = "SELECT * FROM blog ORDER BY date DESC, time DESC ;";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
