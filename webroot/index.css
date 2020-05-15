@@ -128,6 +128,11 @@ ul {
   /*height: 150vh;*/
 }
 
+#uledu li{
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2%;
+}
+
 #skills {
   background: url("https://www.incimages.com/uploaded_files/image/970x450/shutterstock_781606792_360874.jpg");
   background-repeat: no-repeat;

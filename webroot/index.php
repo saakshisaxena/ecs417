@@ -262,7 +262,58 @@
                   </table>
                   </div>
             </div>
-              <div id="portfolio" class="overflow-auto"><h2> Portfolio</h2> </div>
+
+
+
+            <div id="portfolio" class="overflow-auto"><h2> Portfolio</h2>
+                <div style="font-size:65%; text-align:left; background: rgba(255, 255, 255, 0.6); padding: 2%;"> <img src="https://media.giphy.com/media/26u49nPqBN5Is1SOk/giphy.gif" alt="Papers" height="100" width="100" style="float: left;"> <strong style="padding-left:15%;"> Technical paper </strong>(Year1, Professional research and practice)
+<br> Analysis of cloud and its opportunities (benefits), security challenges of hybrid cloud, highlighting cases from banking sector, proposing solutions for a real-world security compromise which happened in AWS as a case study.
+                </div>
+<br />
+                <h4> <strong>Projects</strong> </h4>
+                <ul id="uledu">
+              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/xTk9ZZvJbApGt3vy3C/giphy.gif" alt="Cloud" height="125" width="125" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Gaming application on Google Cloud </strong> <br>Currently developing a Mansion explorer game and deploying it on Google Cloud platform with high availability, autoscaling and Global load balancing features.
+<strong>Platforms/Languages:</strong> Java, Linux, JOption pane
+<strong>Key Characteristics:</strong>
+•	Graphical user interface using JOption pane
+•	High Availability across multiple GCP regions
+•	Autoscaling based on spikes in gaming activity
+•	Global load balancing to distribute traffic across regions
+•	Redundancy/Failover features to avoid downtime
+              </div> </li>
+<br />
+              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/giphy.gif" alt="Website" height="100" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Website creation  </strong> <br>Bucket list is a website which is meant to be a socializing platform for all age groups to share their experiences with other explorers, suggest the best and connect with people who share the same interests. It is mostly a front end based creation which is under improvements.
+<strong>Platforms/ Languages:</strong> JavaScript, Bootstrap, CSS, HTML, Github.
+              </div> </li>
+<br />
+              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/d8isjk1UBPFTm0EBbd/giphy.gif" alt="Sets" height="100" width="125" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Set Theorem Prover </strong> <br>Theorem prover is a tool to verify various set theorems. It can be used by students/examiners/mathematicians to confirm if the set equations are valid or not. It’s also a fun way of learning core functionalities of sets. It’s an extension of “Set Calculator”(a mini project before this) which has a “Theorem Proving Engine” to calculate the set operations and validate whether the operations are equal or not. It has an easy menu driven interface to take user input and validate the Set theorems (both basic and compound operations).
+<strong>Platforms/Languages:</strong> Java, OOPS, Data structures (Hash set), BlueJ Java Editor
+<strong>Key Characteristics:</strong>
+•	Supports core set operations (Union, Intersection, Not)
+•	Supports compound set operations (For example: NOT(AUB) = NOT(A) n NOT(B))
+•	Uses Java Set library (Hash sets)
+•	Menu driven, extensible architecture, modular approach, reusable functions
+              </div> </li>
+<br />
+              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/S1xV8cDgf7xJu/giphy.gif" alt="Lights" height="125" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Traffic Lights Controller </strong> <br>This project is to implement traffic light controller by integrating electronics with computer programming. It can be extended to interface with other devices forming the basis of IoT.
+This project constitutes of two parts
+Traffic lights circuit integration with Raspberry PI
+Design and implementation of software for traffic light controller algorithm
+<strong>Hardware Platform:</strong> Raspberry Pi3 Model B.
+<strong>Operating System:<strong> Raspbian
+<strong>Language:</strong> Scratch Programming Interface
+<strong>Key Characteristics: </strong>
+•	Traffic light LED circuit
+•	Programmable traffic light controller interface
+•	Extensible architecture
+              </div> </li>
+            </ul>
+
+
+               </div>
+
+
+
               <div id="experience" class="overflow-auto"><h2>Experience</h2>
 
               <p style="font-size:75%">  Work Experience </p>
