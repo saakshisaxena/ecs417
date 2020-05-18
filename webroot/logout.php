@@ -1,7 +1,7 @@
 <?php
 
+session_start(); // to be able to access he session
 session_unset();
 session_destroy();
-header("refresh:2; url=index.php");
 
-?>
+header("Location:index.php");

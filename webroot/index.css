@@ -128,8 +128,12 @@ ul {
   /*height: 150vh;*/
 }
 
-#uledu li{
+#edu table {
   background: rgba(255, 255, 255, 0.6);
+}
+
+#uledu li{
+  background: rgba(255, 255, 255, 0.5);
   padding: 2%;
 }
 
@@ -137,6 +141,12 @@ ul {
   background: url("https://www.incimages.com/uploaded_files/image/970x450/shutterstock_781606792_360874.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#skills table {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 2%;
+  margin: 2%;
 }
 
 #portfolio {

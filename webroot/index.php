@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!Doctype html>
 <html>
   <head lang="en">
@@ -96,12 +99,26 @@
        <div class="row"  >
          <div class="col-3">
           <aside class="sidenav" id="left">
-            <p><strong> <em> Contact Me </em> </strong></p>
+            <?php
+            if (isset($_SESSION['name'])) {
+              echo '<p style="color: white; font-size: 50%;"> Welcome '.$_SESSION['name'].'</p>';
+            }
+             ?>
+            <p style="color: #A9A9A9; font-size: 25px;"><strong> <em> Contact Me </em> </strong></p>
             <p>  <a href="https://uk.linkedin.com/in/saakshi-saxena-29797b174" target="_blank"> <figure> <image widht=50 height=50 src="https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png"> <figcaption style="font-size: 60%; "> LinkedIn </figcaption></figure> </a> </p>
             <p> <a href="https://saakshisaxena.wordpress.com/author/saakshisaxena2000/" target="_blank"> <figure> <image widht=50 height=50 src="https://s.w.org/style/images/about/WordPress-logotype-simplified.png"> <figcaption style="font-size: 60%;"> Wordpress </figcaption></figure> </a> </p>
-            <button style="font-size: 15px; margin-left: 0;" onclick="window.location.href = 'login.html';">Login</button>
-            <p style="color: white; font-size: 50%;"> or </p>
-            <button style="font-size: 15px; margin-left: 0;" onclick="window.location.href = 'signin.html';">Signin</button>
+              <?php
+                          if (isset($_SESSION['name'])) {
+                            echo '<form action="logout.php" method="post">
+                              <button style="font-size: 15px; margin-left: 0;" type="submit" name="logout-submit">Logout </button>
+                            </form>';
+                          }
+                          else {
+                            echo '<a style="font-size: 15px;  background: white;" href = "login.html">Login</a>
+                            <p style="color: white; font-size: 50%; "> or </p>
+                            <a style="font-size: 15px;  background: white;" href = "signin.html">Signin</a>';
+                          }
+                   ?>
           </aside>
           </div>
 
@@ -266,7 +283,7 @@
 
 
             <div id="portfolio" class="overflow-auto"><h2> Portfolio</h2>
-                <div style="font-size:65%; text-align:left; background: rgba(255, 255, 255, 0.6); padding: 2%;"> <img src="https://media.giphy.com/media/26u49nPqBN5Is1SOk/giphy.gif" alt="Papers" height="100" width="100" style="float: left;"> <strong style="padding-left:15%;"> Technical paper </strong>(Year1, Professional research and practice)
+                <div style="font-size:65%; text-align:left; background: rgba(255, 255, 255, 0.5); padding: 2%;"> <img src="https://media.giphy.com/media/26u49nPqBN5Is1SOk/giphy.gif" alt="Papers" height="100" width="100" style="float: left;"> <strong style="padding-left:15%;"> Technical paper </strong>(Year1, Professional research and practice)
 <br> Analysis of cloud and its opportunities (benefits), security challenges of hybrid cloud, highlighting cases from banking sector, proposing solutions for a real-world security compromise which happened in AWS as a case study.
                 </div>
 <br />

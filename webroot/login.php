@@ -42,8 +42,8 @@ if ($result->num_rows > 0) {
     $actiondone = true;
 }
 if(!$actiondone)
- {echo "Something went wrong :( <br> Enter correct password for that email address.";
-header("refresh:2; url=login.html");}
+ {echo "Something went wrong :( <br> Enter correct password for that email address. <h6> Try again. </h6>";
+header("refresh:5; url=login.html");}
 
 
 
