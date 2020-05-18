@@ -28,6 +28,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       if($row['pwd']==$pwd){
         echo 'success <br><br>' ;
+        session_start();
         $_SESSION['name'] = $row["name"];
         echo "<h3>Welcome ".$_SESSION['name']." :) </h4>";
         header("refresh:2; url=addPost.html");
