@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
   //Make this connection as a separate conncetion file and then include once wherever needed!!!!!
     $servername = getenv("MYSQL_SERVICE_HOST");
@@ -177,9 +179,18 @@
       }
       ob_end_flush();
         ?> </p>
-      <a style="font-size: 140%;" href="addPost.html"> <strong>Add a post</strong> </a>
+
 
     </div>
+    <br>
+    <?php
+    if(!isset($_SESSION['name'])) {
+      echo '  <a style="font-size: 125%;" href="login.html"> <strong>Add a post</strong> </a>';
+   }
+   else {
+     echo '  <a style="font-size: 125%;" href="addPost.html"> <strong>Add a post</strong> </a>';
+   }
+   ?>
   </body>
 
 </html>
