@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
         $_SESSION['name'] = $row["name"];
         echo "<h3>Welcome ".$_SESSION['name']." :) </h4>";
         header("refresh:2; url=addPost.html");
+        exit();
         $actiondone = true;
       }
 
@@ -55,7 +56,7 @@ header("refresh:5; url=login.html");}
 
 
 
-  session_start();
+
   //$_SESSION['name'] = $_POST['name'];
   $_SESSION['email'] = $email;
 
