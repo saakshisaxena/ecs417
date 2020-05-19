@@ -195,8 +195,7 @@ button a {
 }
 
 #last {
-/*Footer not working */
-  bottom: 0;
+/*Footer*/
   width: 644px;
   height: 20px;
   margin-left: 25%;

@@ -83,11 +83,11 @@ session_start();
             padding: 2%;
          }
          body strong {
-           font-size: 175%;
-           font-family: "Courier New", Courier, monospace;
+           font-size: 150%;
+          font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
          }
          body em {
-           font-size: 125%;
+           font-size: 110%;
          }
          .overflow-auto {
 
@@ -174,7 +174,7 @@ session_start();
               $newdate= date("jS M Y, ", strtotime($row["date"]));
               $newtime= date("H:i ", strtotime($row["time"]));
               echo /*" <strong> Date:</strong> "*/"<p>&#128336; " . $newdate./* " <strong> Time:</strong> " .*/ $newtime." UTC </p> <br> <strong>" . $row["title"]. "</strong><br>";
-              echo " <em> " . $row["text"]. "</em><br>". "<br><hr> <br>";
+              echo " <em> " . $row["text"]. "</em><br>". "<br><hr style='background-color:white'> <br>";
 
             }
           }

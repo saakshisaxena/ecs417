@@ -284,11 +284,11 @@
             </div>
           </article>
           </div>
-          <footer id= "last" style="margin-bottom:0%;">
+          <footer id= "last">
          <!--   <p><a href="#topnav"> to top </a> </p> -->
-           <p><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
-             | <a href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
-             | <a href = "Exercise4.html"> Hobbies </a> </p>
+           <p style="font-size: 65%; font-family: "Times New Roman", Times, serif;"><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
+             | <a target="_blank" href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
+             | <a target="_blank" href = "https://www.facebook.com/saakshi.saxena2000"> Facebook </a> </p>
            <em> Copyright &copy 2020 Saakshi Saxena </em>
            </footer>
         </div>
