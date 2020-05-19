@@ -173,8 +173,15 @@ session_start();
           }
 
       } else {
-          echo "0 results <br> Redirecting to login page.";
-          header("refresh:2; url=login.html");
+          
+          if(!isset($_SESSION['name'])) {
+            echo ' 0 results <br> Redirecting to login page.';
+            header("refresh:2; url=login.html");
+         }
+         else {
+           echo ' 0 results <br> Redirecting to add a post page.';
+           header("refresh:2; url=addPost.html");
+         }
           exit();
       }
       ob_end_flush();

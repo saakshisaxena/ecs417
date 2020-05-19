@@ -73,7 +73,7 @@
           </div>
 <!-- MAIN -->
             <article class="col-9 main" >
-              <div id="aboutme" ><h2> About Me</h2>
+              <section id="aboutme" ><h2> About Me</h2>
                 <p style="font-size:50%"> I am Saakshi Saxena, student at Queen Mary University Of London. </p>
                 <p style="font-size:50%">Right from middle-school, I always enjoyed programming but didn't want to
                   limit myself to technical concepts only. I started with qBasic, Logo during schooling and ventured
@@ -85,7 +85,7 @@
                     and exploring cloud computing by deploying resources in Google Cloud. </p>
                 <p style="font-size:50%">Apart from this, I also volunteered for activities like being a crew member for
                    Anime League gaming event and worked as a part-time administrator at a tuition centre to get non-tech related exposure. </p>
-              </div>
+              </section>
               <div id="edu" class="overflow-auto"><h2> Education and Qualifications </h2>
                 <br>
                 <div class="row">
@@ -282,7 +282,7 @@
               </li>
               </ol>
             </div>
-            </article>
+          </article>
           </div>
         </div>
 
