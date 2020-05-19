@@ -75,7 +75,7 @@
             <article class="col-9 main" >
               <div id="aboutme" ><h2> About Me</h2>
                 <p style="font-size:50%"> I am Saakshi Saxena, student at Queen Mary University Of London. </p>
-                <p style="font-size:50%">Right from childhood, I always enjoyed programming but didn't want to
+                <p style="font-size:50%">Right from middle-school, I always enjoyed programming but didn't want to
                   limit myself to technical concepts only. I started with qBasic, Logo during schooling and ventured
                    into  OOPS and web programming languages as I grew up. My first mini project was a set theorem
                    prover where I combined two of my favourite subjects (mathematics and programming) to make it
