@@ -182,11 +182,11 @@ session_start();
       } else {
           if(!isset($_SESSION['name'])) {
             echo ' 0 results <br> Redirecting to login page.';
-            header("refresh:2; url=login.html");
+            header("refresh:3; url=login.html");
          }
          else {
            echo ' 0 results <br> Redirecting to add a post page.';
-           header("refresh:2; url=addPost.html");
+           header("refresh:3; url=addPost.html");
          }
           exit();
       }
