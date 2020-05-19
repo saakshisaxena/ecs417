@@ -6,6 +6,7 @@
   <head lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Saakshi Saxena."> <!-- This will often show up in search results.-->
     <title> Saakshi Saxena </title>
     <link rel="alternate.stylesheet" type="text/css" href="reset.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,83 +22,32 @@
     <div>
       <header>
 
-    <!--    <div class="sidenav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#clients">Clients</a>
-          <a href="#contact">Contact</a>
-        </div> -->
-
-        <!-- Navbar (sit on top) -->
+        <!-- Top Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="topnav">
           <a href="#home" class="navbar-brand"><span cloHOME <span class="sr-only">(current)</span> </a>
            <a class="navbar-brand" href="#smthspecial">Saakshi Saxena</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!--  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-              </a> -->
               <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
                   <a href="#topnav" class="nav-link">HOME <span class="sr-only">(current)</span> </a>
                 </li>
-              <!--  <li class="nav-item">
-                  <a href="#about" class="nav-link"> ABOUT</a>
-                </li> -->
                 <li class="nav-item">
                   <a href="#portfolio" class="nav-link"> PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
                   <a href="viewBlog.php" class="nav-link"> BLOG</a>
                 </li>
-                  <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                    <i class="fa fa-search"></i>
-                  </a> -->
-                <!--  <li class="nav-item" >
-                    <a href="" class="nav-link" id="sp"> Surprise Me</a>
-                  </li> -->
                 </ul>
                </div>
           </nav>
       </header>
-        <!-- Navbar on small screens -->
-      <!--  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-          <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-        </div>
-      </div> -->
-
-    <!--  <div class="parallax"></div>
-
-      <div style="height:1000px;background-color:red;font-size:36px">
-      Scroll Up and Down this page to see the parallax scrolling effect.
-      This div is just here to enable scrolling.
-      Tip: Try to remove the background-attachment property to remove the scrolling effect.
-      </div>
-
-      <div class="parallax"></div> -->
-
-
-
-
-      <div class="parallax ">
-      <!--  <header>
-          <hgroup>
-            header
-          </hgroup>
-        </header>
-
-        <nav>
-          nav
-        </nav> -->
-
-       <div class="row"  >
+<!--main elements of the page -->
+       <div class="row">
          <div class="col-3">
+<!-- side nav bar -->
           <aside class="sidenav" id="left">
             <?php
             if (isset($_SESSION['name'])) {
@@ -121,24 +71,23 @@
                    ?>
           </aside>
           </div>
-
-
-        <!--  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div class="w3-display-middle" style="white-space:nowrap;">
-              <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-            </div>
-          </div> -->
-
-          <!-- MAIN -->
+<!-- MAIN -->
             <article class="col-9 main" >
               <div id="aboutme" ><h2> About Me</h2>
                 <p style="font-size:50%"> I am Saakshi Saxena, student at Queen Mary University Of London. </p>
-                <p style="font-size:50%">Right from childhood, I always enjoyed programming but didn't want to limit myself to technical concepts only. I started with qBasic, Logo during schooling and ventured into  OOPS and web programming languages as I grew up. My first mini project was a set theorem prover where I combined two of my favourite subjects (mathematics and programming) to make it easy for students and lecturers to verify set theorms. Later I also did mini projects in IoT (traffic lights) and participated in Vodafone's "Code like a girl" program where I worked on a web application. I am currently working on a project in Robotics (as part of AI society initiative) and exploring cloud computing by deploying resources in Google Cloud. </p>
-
-                <p style="font-size:50%">Apart from this, I also volunteered for activities like being a crew member for Anime League gaming event and worked as a part-time administrator at a tuition centre to get non-tech related exposure. </p>
+                <p style="font-size:50%">Right from childhood, I always enjoyed programming but didn't want to
+                  limit myself to technical concepts only. I started with qBasic, Logo during schooling and ventured
+                   into  OOPS and web programming languages as I grew up. My first mini project was a set theorem
+                   prover where I combined two of my favourite subjects (mathematics and programming) to make it
+                   easy for students and lecturers to verify set theorms. Later I also did mini projects in IoT
+                   (traffic lights) and participated in Vodafone's "Code like a girl" program where I worked on
+                   a web application. I am currently working on a project in Robotics (as part of AI society initiative)
+                    and exploring cloud computing by deploying resources in Google Cloud. </p>
+                <p style="font-size:50%">Apart from this, I also volunteered for activities like being a crew member for
+                   Anime League gaming event and worked as a part-time administrator at a tuition centre to get non-tech related exposure. </p>
               </div>
               <div id="edu" class="overflow-auto"><h2> Education and Qualifications </h2>
-  <br>
+                <br>
                 <div class="row">
                   <table style="font-size:50%" class="table">
                    <caption> Academic Qualifications </caption>
@@ -176,10 +125,6 @@
                         <td> Science (Chemistry)</td>
                         <td> 95%</td>
                       </tr>
-
-
-
-
                       <tr>
                         <td rowspan="5"><strong>Page Institution </strong> (Year 11) Board of Intermediate Education</td>
                         <td> Mathematics</td>
@@ -198,9 +143,6 @@
                         <td> Science (Chemistry)</td>
                         <td> 95%</td>
                       </tr>
-
-
-
                       <tr>
                         <td rowspan="4"><strong>St. Joseph's Public School </strong> (Year 10) CISCE (ICSE), India</td>
                         <td> Computer Science</td>
@@ -216,18 +158,12 @@
                         <td> Science</td>
                         <td> 92%</td>
                       </tr>
-
                     </tbody>
                     <tr>
                       <td>
                   </table>
-
               </div>
-
-
-
-
-
+<!--Skills and Achievements -->
               </div>
               <div id="skills" class="overflow-auto"><h2> Skills and Achievements </h2>
                 <div class="row">
@@ -259,7 +195,6 @@
                   <div class="row">
                   <theader> Awards and recognition </theader>
                     <table style="font-size:50%" class="table table-striped">
-
                       <tr>
                         <td>Year 10:</td>
                         <td>received academic award for <strong> top performance</strong>. </td>
@@ -281,58 +216,54 @@
             </div>
 
 
-
+<!-- PORTFOLIO -->
             <div id="portfolio" class="overflow-auto"><h2> Portfolio</h2>
                 <div style="font-size:65%; text-align:left; background: rgba(255, 255, 255, 0.5); padding: 2%;"> <img src="https://media.giphy.com/media/26u49nPqBN5Is1SOk/giphy.gif" alt="Papers" height="100" width="100" style="float: left;"> <strong style="padding-left:15%;"> Technical paper </strong>(Year1, Professional research and practice)
-<br> Analysis of cloud and its opportunities (benefits), security challenges of hybrid cloud, highlighting cases from banking sector, proposing solutions for a real-world security compromise which happened in AWS as a case study.
+                  <br> Analysis of cloud and its opportunities (benefits), security challenges of hybrid cloud, highlighting cases from banking sector, proposing solutions for a real-world security compromise which happened in AWS as a case study.
                 </div>
-<br />
+                <br />
                 <h4> <strong>Projects</strong> </h4>
                 <ul id="uledu">
               <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/xTk9ZZvJbApGt3vy3C/giphy.gif" alt="Cloud" height="125" width="125" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Gaming application on Google Cloud </strong> <br>Currently developing a Mansion explorer game and deploying it on Google Cloud platform with high availability, autoscaling and Global load balancing features.
-<strong>Platforms/Languages:</strong> Java, Linux, JOption pane
-<strong>Key Characteristics:</strong>
-•	Graphical user interface using JOption pane
-•	High Availability across multiple GCP regions
-•	Autoscaling based on spikes in gaming activity
-•	Global load balancing to distribute traffic across regions
-•	Redundancy/Failover features to avoid downtime
+                  <strong>Platforms/Languages:</strong> Java, Linux, JOption pane
+                  <strong>Key Characteristics:</strong>
+                  •	Graphical user interface using JOption pane
+                  •	High Availability across multiple GCP regions
+                  •	Autoscaling based on spikes in gaming activity
+                  •	Global load balancing to distribute traffic across regions
+                  •	Redundancy/Failover features to avoid downtime
+                  </div> </li>
+                  <br />
+              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/giphy.gif" alt="Website" height="100" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Website creation  </strong> <br>Bucket list is a website which is meant to be a socializing platform for all age groups to share their experiences with other explorers, suggest the best and connect with people who share the same interests. It is      mostly a front end based creation which is under improvements.
+                <strong>Platforms/ Languages:</strong> JavaScript, Bootstrap, CSS, HTML, Github.
               </div> </li>
-<br />
-              <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/giphy.gif" alt="Website" height="100" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Website creation  </strong> <br>Bucket list is a website which is meant to be a socializing platform for all age groups to share their experiences with other explorers, suggest the best and connect with people who share the same interests. It is mostly a front end based creation which is under improvements.
-<strong>Platforms/ Languages:</strong> JavaScript, Bootstrap, CSS, HTML, Github.
-              </div> </li>
-<br />
+              <br />
               <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/d8isjk1UBPFTm0EBbd/giphy.gif" alt="Sets" height="100" width="125" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Set Theorem Prover </strong> <br>Theorem prover is a tool to verify various set theorems. It can be used by students/examiners/mathematicians to confirm if the set equations are valid or not. It’s also a fun way of learning core functionalities of sets. It’s an extension of “Set Calculator”(a mini project before this) which has a “Theorem Proving Engine” to calculate the set operations and validate whether the operations are equal or not. It has an easy menu driven interface to take user input and validate the Set theorems (both basic and compound operations).
-<strong>Platforms/Languages:</strong> Java, OOPS, Data structures (Hash set), BlueJ Java Editor
-<strong>Key Characteristics:</strong>
-•	Supports core set operations (Union, Intersection, Not)
-•	Supports compound set operations (For example: NOT(AUB) = NOT(A) n NOT(B))
-•	Uses Java Set library (Hash sets)
-•	Menu driven, extensible architecture, modular approach, reusable functions
+              <strong>Platforms/Languages:</strong> Java, OOPS, Data structures (Hash set), BlueJ Java Editor
+              <strong>Key Characteristics:</strong>
+              •	Supports core set operations (Union, Intersection, Not)
+              •	Supports compound set operations (For example: NOT(AUB) = NOT(A) n NOT(B))
+              •	Uses Java Set library (Hash sets)
+              •	Menu driven, extensible architecture, modular approach, reusable functions
               </div> </li>
-<br />
+              <br />
               <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/S1xV8cDgf7xJu/giphy.gif" alt="Lights" height="125" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Traffic Lights Controller </strong> <br>This project is to implement traffic light controller by integrating electronics with computer programming. It can be extended to interface with other devices forming the basis of IoT.
-This project constitutes of two parts
-Traffic lights circuit integration with Raspberry PI
-Design and implementation of software for traffic light controller algorithm
-<strong>Hardware Platform:</strong> Raspberry Pi3 Model B.
-<strong>Operating System:<strong> Raspbian
-<strong>Language:</strong> Scratch Programming Interface
-<strong>Key Characteristics: </strong>
-•	Traffic light LED circuit
-•	Programmable traffic light controller interface
-•	Extensible architecture
+              This project constitutes of two parts
+              Traffic lights circuit integration with Raspberry PI
+              Design and implementation of software for traffic light controller algorithm
+              <strong>Hardware Platform:</strong> Raspberry Pi3 Model B.
+              <strong>Operating System:<strong> Raspbian
+              <strong>Language:</strong> Scratch Programming Interface
+              <strong>Key Characteristics: </strong>
+              •	Traffic light LED circuit
+              •	Programmable traffic light controller interface
+              •	Extensible architecture
               </div> </li>
             </ul>
+            </div>
 
-
-               </div>
-
-
-
+<!-- Work Experience -->
               <div id="experience" class="overflow-auto"><h2>Experience</h2>
-
               <p style="font-size:75%">  Work Experience </p>
               <ol style="font-size:50%">
                 <li>
@@ -350,35 +281,17 @@ Design and implementation of software for traffic light controller algorithm
               <dd>  Volunteered at the London Anime League and Gaming Con.  Responsible for registrations and smooth functioning of the event. </dd>
               </li>
               </ol>
-
-
-
-
-
-               </div>
-              <!--<div id="blog" class="overflow-auto">
-                <h2> Blog</h2>
-                <p>  </p>
-                <a style="font-size: 125%;" href="addPost.html"> <strong>Add a post</strong> </a>
-
-              </div> -->
-
+            </div>
             </article>
           </div>
-      </div>
-
-    <!--  <aside col= id="loadLogin"> login page to be loaded</aside> -->
-  </div>
-<!--   <button type="link"  class="btn btn-light"><a href="#topnav"> to top </a> </button> -->
-
+        </div>
 
  <footer id= "last" style="margin-bottom:0%;">
-
-
-  <p>      <a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a> | <a href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>|
-     <a href = "Exercise4.html"> Hobbies </a> </p>
-
-    <em> Copyright &copy 2020 Saakshi Saxena </em>
+<!--   <p><a href="#topnav"> to top </a> </p> -->
+  <p><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
+    | <a href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
+    | <a href = "Exercise4.html"> Hobbies </a> </p>
+  <em> Copyright &copy 2020 Saakshi Saxena </em>
   </footer>
 
 
