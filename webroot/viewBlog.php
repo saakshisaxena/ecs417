@@ -154,7 +154,14 @@ session_start();
       </nav>
   </header>
     <div id="blog" class="overflow-auto" >
-      <h2>Welcome to my Blog &#128522;</h2>
+      <h2>Welcome to my Blog
+        <?php
+        if(isset($_SESSION['name'])) {
+          echo $_SESSION['name'];
+        }
+
+        ?>
+         &#128522;</h2>
       <p> <?php //USE prepared statements.......use placeholders
       $sql = "SELECT * FROM blog ORDER BY date DESC, time DESC ;";
       $result = $conn->query($sql);
@@ -173,7 +180,6 @@ session_start();
           }
 
       } else {
-          
           if(!isset($_SESSION['name'])) {
             echo ' 0 results <br> Redirecting to login page.';
             header("refresh:2; url=login.html");
