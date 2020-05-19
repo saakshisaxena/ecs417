@@ -197,7 +197,7 @@
                     <table style="font-size:50%" class="table table-striped">
                       <tr>
                         <td>Year 10:</td>
-                        <td>received academic award for <strong> top performance</strong>. </td>
+                        <td>Received academic award for <strong> top performance</strong>. </td>
                       </tr>
                       <tr>
                         <td>Year 11:</td>
@@ -286,10 +286,10 @@
           </div>
           <footer id= "last">
          <!--   <p><a href="#topnav"> to top </a> </p> -->
-           <p style="font-size: 65%; font-family: "Times New Roman", Times, serif;"><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
+           <p style="font-family: "Times New Roman", Times, serif;"><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
              | <a target="_blank" href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
              | <a target="_blank" href = "https://www.facebook.com/saakshi.saxena2000"> Facebook </a> </p>
-           <em> Copyright &copy 2020 Saakshi Saxena </em>
+           <em style="font-family: "Times New Roman", Times, serif;"> Copyright &copy 2020 Saakshi Saxena </em>
            </footer>
         </div>
 
