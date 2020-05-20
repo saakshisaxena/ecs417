@@ -75,15 +75,15 @@
 <!-- MAIN -->
             <article class="col-9 main" >
               <section id="aboutme" ><h2> About Me</h2>
-                <p style="font-size:50%"> I am Saakshi Saxena, student at Queen Mary University Of London. </p>
-                <p style="font-size:50%">Right from middle-school, I always enjoyed programming but didn't want to
-                  limit myself to technical concepts only. I started with qBasic, Logo during schooling and ventured
-                   into  OOPS and web programming languages as I grew up. My first mini project was a set theorem
-                   prover where I combined two of my favourite subjects (mathematics and programming) to make it
-                   easy for students and lecturers to verify set theorms. Later I also did mini projects in IoT
-                   (traffic lights) and participated in Vodafone's "Code like a girl" program where I worked on
-                   a web application. I am currently working on a project in Robotics (as part of AI society initiative)
-                    and exploring cloud computing by deploying resources in Google Cloud. </p>
+                <p style="font-size:50%"> I am Saakshi Saxena, student at Queen Mary University of London. </p>
+                <p style="font-size:50%">Right from middle school, I always enjoyed programming but didn't want to
+                  limit myself to technical concepts only. I started with QBasic, Logo during schooling and ventured
+                   into  OOPS and web programming languages as I grew up. My first mini project was a Set Theorem
+                   Prover where I combined two of my favourite subjects (Mathematics and Programming) to make it
+                   easy for students and lecturers to verify set theorems. Later I also did mini projects in IoT
+                   (traffic lights) and participated in Vodafone's "Code Like a Girl" program where I worked on
+                   a web application. I am currently working on a project in Robotics (as part of AI Society's initiative)
+                    and exploring Cloud Computing by deploying resources in Google Cloud. </p>
                 <p style="font-size:50%">Apart from this, I also volunteered for activities like being a crew member for
                    Anime League gaming event and worked as a part-time administrator at a tuition centre to get non-tech related exposure. </p>
               </section>
@@ -108,7 +108,7 @@
                         <td>N/A </td>
                       </tr>
                       <tr>
-                        <td rowspan="5"><strong>Page Institution </strong> (Year 12) Board of Intermediate Education</td>
+                        <td rowspan="5"><strong>Page Institution </strong> (Year 12) Board of Intermediate Education (India)</td>
                         <td> Mathematics</td>
                         <td> 96%</td>
                         <td rowspan="5">96.4% </td>
@@ -172,15 +172,15 @@
 
                     <tr>
                       <td> Programming Languages </td>
-                      <td> Java, JavaScript, Html, CSS, Scratch </td>
+                      <td> Java, JavaScript, Scratch, PHP, Python </td>
                     </tr>
                     <tr>
                       <td> Programming Methodologies</td>
                       <td>Structured Programming, Object Oriented Programming  </td>
                     </tr>
                     <tr>
-                      <td> Data structures and Algorithms</td>
-                      <td>Data structures and Algorithms	Arrays, Strings, Searching and Sorting Algorithms, ArrayLists  </td>
+                      <td> Data Structures and Algorithms</td>
+                      <td>Arrays, Strings, Searching and Sorting Algorithms, ArrayLists  </td>
                     </tr><tr>
                       <td> MS Office</td>
                       <td> Word, Excel, PowerPoint</td>
@@ -249,16 +249,16 @@
               </div> </li>
               <br />
               <li>  <div style="font-size:93%; text-align:left;"> <img src="https://media.giphy.com/media/S1xV8cDgf7xJu/giphy.gif" alt="Lights" height="125" width="100" style="float: left;"> <strong style="padding-left:15%; font-size:125%;"> Traffic Lights Controller </strong> <br>This project is to implement traffic light controller by integrating electronics with computer programming. It can be extended to interface with other devices forming the basis of IoT.
-              This project constitutes of two parts
-              Traffic lights circuit integration with Raspberry PI
-              Design and implementation of software for traffic light controller algorithm
+              This project constitutes of two parts..
+              Traffic lights circuit integration with Raspberry PI,
+              Design and implementation of software for traffic light controller algorithm.
               <strong>Hardware Platform:</strong> Raspberry Pi3 Model B.
-              <strong>Operating System:<strong> Raspbian
-              <strong>Language:</strong> Scratch Programming Interface
+              <strong>Operating System:<strong> Raspbian.
+              <strong>Language:</strong> Scratch Programming Interface.
               <strong>Key Characteristics: </strong>
-              •	Traffic light LED circuit
-              •	Programmable traffic light controller interface
-              •	Extensible architecture
+              •	Traffic light LED circuit,
+              •	Programmable traffic light controller interface,
+              •	Extensible architecture.
               </div> </li>
             </ul>
             </div>
@@ -268,12 +268,12 @@
               <p style="font-size:75%">  Work Experience </p>
               <ol style="font-size:50%">
                 <li>
-                <dt>	Part-Time Job as an Administrator </dt>
-                <dd>Worked as an Administrator at a tuition center for 3 months. Learned working in a fast-passed environment and communicating between parents and authorities. Was responsible for smooth functioning of the center. </dd>
+                <dt>	Part-Time Job </dt>
+                <dd>Worked as an Administrator at a tuition centre for 3 months. Learned working in a fast-paced environment and communicating between parents and authorities. Was responsible for smooth functioning of the center. </dd>
               </li>
               <br>
               <li>
-                <dt>	Vodafone Code Like A Girl</dt>
+                <dt>	Vodafone Code Like a Girl</dt>
                 <dd> Attended Vodafone’s workshop on JavaScript, CSS, HTML, Bootstrap and more. Created few websites during those 4 days. Was the lead of a group presentation at the end of the program. <dd>
               </li>
               <br>
@@ -286,7 +286,7 @@
           </article>
           </div>
           <footer id= "last">
-           <p><a href="#topnav"> to top </a> </p>
+           <p><a href="#topnav"> To Top </a> </p>
            <p style="font-family: "Times New Roman", Times, serif;"><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
              | <a target="_blank" href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
              | <a target="_blank" href = "https://www.facebook.com/saakshi.saxena2000"> Facebook </a> </p>
