@@ -1,3 +1,4 @@
+/* event processing for preview button */
 document.getElementById('button').addEventListener('click', function() {
 document.querySelector('.bg-model').style.display='flex';
 const searchRegExp = /\n/g;
@@ -21,6 +22,7 @@ document.getElementById('goback').addEventListener('click', function() {
 document.querySelector('.bg-model').style.display='none';
 });
 
+/* event processing for clear button */
 function resetfunction() {
   var confirmation = window.confirm("This article will not be saved once cleared. \n \'OK\' to continue \n \'Cancel\' to discontinue");
   if(confirmation == true)
@@ -28,20 +30,45 @@ function resetfunction() {
   return false;
 }
 
+/*prevents the submission of form if fields are left empty */
 function preventDefault() {
   var title= document.getElementById("title").value;
   var post = document.getElementById("textarea").value;
   var count = 0;
-  if(title=='')
-   {document.getElementById("title").style.backgroundColor="purple";
-   window.alert("Can't leave title empty :(");
+  if(title=='' && post=='')
+  {
+    document.getElementById("title").style.backgroundColor="rgba(255,0,0, 0.2)";
+    document.getElementById("textarea").style.backgroundColor="rgba(255,0,0, 0.2)";
+    window.alert("Can't leave title and blog text empty :(");
     count++;
-    }
-  if(post=='')
-  {document.getElementById("textarea").style.backgroundColor="red";
-  window.alert("Can't leave blog text empty :(");
+  }
+  else if(post=='' && title!='')
+  {
+    document.getElementById("title").style.backgroundColor="white";
+    document.getElementById("textarea").style.backgroundColor="rgba(255,0,0, 0.2)";
+    window.alert("Can't leave blog text empty :(");
     count ++;
-    }
+  }
+  else if(post!='' && title=='')
+  {
+    document.getElementById("textarea").style.backgroundColor="white";
+    document.getElementById("title").style.backgroundColor="rgba(255,0,0, 0.2)";
+    window.alert("Can't leave title empty :(");
+    count ++;
+  }
+  else if(title=='')
+  {
+    document.getElementById("title").style.backgroundColor="rgba(255,0,0, 0.2)";
+    window.alert("Can't leave title empty :(");
+    count++;
+  }
+  else if(post=='')
+  {
+    document.getElementById("textarea").style.backgroundColor="rgba(255,0,0, 0.2)";
+    window.alert("Can't leave blog text empty :(");
+    count ++;
+  }
+  
   if(count > 0){
       return false;
   }
@@ -51,22 +78,6 @@ function preventDefault() {
   }
 }
 
-/*function previewfunc() {
-  var title= document.getElementById("title").value;
-  var post = document.getElementById("textarea").value;
-/*  let newDiv = document.createElement('div');
-  newDiv.className = 'Hello text-center';
-  newDiv.id = 'Hello1';
-  newDiv.setAttribute('title','hello div');
-  let newDivText = document.createTextNode('<strong>Title:</strong>"+ title +" \n <strong>Post:</strong>"+ post');
-  newDiv.appendChild(newDivText);*/
-/*  if(preventDefault())
-  {
-
-    document.write("<h4> Preview of your post. </h4><strong>Title:</strong> <strong><em>"+ title +"</em></strong> <br><br> <strong>Post: </strong> <em>"+ post +"</em>  ");
-
-  }
-}*/
 
 function goBack() {
   window.history.back();

@@ -1,37 +1,10 @@
 
-
-/**<!-- ADD THE POPUP FOR OK OR CANCEL WHEN CLEAR IS PRESSED -->**/
 input:valid:required {
   background-color: #ddffdd;
 }
 textarea:valid:required {
   background-color: #ddffdd;
 }
-/*
-
-textarea:invalid{
-  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
-  background-color: #ffdddd;
-}
-input:invalid {
-  background-color: #ffdddd;
-  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
-}
-input:invalid:required{
-  border-color: rgba(200, 0, 0, 0.85);
-}
-textarea:invalid:required{
-  border-color: rgba(200, 0, 0, 0.85);
-}WHAT IS THE DIFFERENCE BETWEEN THIS ONE AND THE ONE ABOVE
-
-input:required:invalid {
-  border-color: #c00000;
-}
-textarea:required:invalid {
-  border-color: #c00000;
-}
-*/
-
 
 body {
   text-align: center;
@@ -73,6 +46,8 @@ legend {
   display: flex;
   flex-direction: column;
 }
+
+/* css for preview function */
 .bg-model {
   margin: 0%;
   padding: 0%;

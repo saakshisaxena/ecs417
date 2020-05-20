@@ -1,6 +1,5 @@
-
 <?php
-//Make this connection as a separate conncetion file and then include once wherever needed!!!!!
+
 $servername = getenv("MYSQL_SERVICE_HOST");
 $username = getenv("DATABASE_USER");
 $password=getenv("DATABASE_PASSWORD");

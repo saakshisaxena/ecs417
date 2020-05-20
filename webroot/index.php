@@ -21,28 +21,29 @@
   <body>
     <div>
       <header>
-
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="topnav">
-          <a href="#home" class="navbar-brand"><span cloHOME <span class="sr-only">(current)</span> </a>
-           <a class="navbar-brand" href="#smthspecial">Saakshi Saxena</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a href="#topnav" class="nav-link">HOME <span class="sr-only">(current)</span> </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#portfolio" class="nav-link"> PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                  <a href="viewBlog.php" class="nav-link"> BLOG</a>
-                </li>
+        <hgroup>
+          <!-- Top Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="topnav">
+            <a href="#home" class="navbar-brand"><span cloHOME <span class="sr-only">(current)</span> </a>
+             <a class="navbar-brand" href="#smthspecial">Saakshi Saxena</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                 <li class="nav-item active">
+                    <a href="#topnav" class="nav-link">HOME <span class="sr-only">(current)</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#portfolio" class="nav-link"> PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="viewBlog.php" class="nav-link"> BLOG</a>
+                  </li>
                 </ul>
-               </div>
-          </nav>
+              </div>
+            </nav>
+        </hgroup>
       </header>
 <!--main elements of the page -->
        <div class="row">
@@ -163,8 +164,8 @@
                       <td>
                   </table>
               </div>
-<!--Skills and Achievements -->
               </div>
+<!--Skills and Achievements -->
               <div id="skills" class="overflow-auto"><h2> Skills and Achievements </h2>
                 <div class="row">
                   <table style="font-size:50%" class="table table-striped">
@@ -285,7 +286,7 @@
           </article>
           </div>
           <footer id= "last">
-         <!--   <p><a href="#topnav"> to top </a> </p> -->
+           <p><a href="#topnav"> to top </a> </p>
            <p style="font-family: "Times New Roman", Times, serif;"><a target="_blank" href = "https://uk.linkedin.com/in/saakshi-saxena-29797b174"> LinkedIn </a>
              | <a target="_blank" href = "mailto://saakshisaxena2000@gmail.com"> Contact Saakshi </a>
              | <a target="_blank" href = "https://www.facebook.com/saakshi.saxena2000"> Facebook </a> </p>

@@ -8,15 +8,11 @@ $db=getenv("DATABASE_NAME");
 
 $conn = new mysqli($servername, $username, $password, $db);
 
-//echo "gReat work :DD";
 // Check connection
 if ($conn->connect_error) {
-//echo "aww :\(";
-die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
 
-
-//$username = $_POST['name'];
 $pwd = $_POST['pwd'];
 $email = $_POST['email'];
 
@@ -28,7 +24,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       if($row['pwd']==$pwd){
         echo 'success <br><br>' ;
-        session_start();
+        session_start(); //successful login, starting a new session
         $_SESSION['name'] = $row["name"];
         echo "<h3>Welcome ".$_SESSION['name']." :) </h4>";
         header("refresh:2; url=addPost.html");
@@ -44,32 +40,12 @@ if ($result->num_rows > 0) {
     $actiondone = true;
 }
 if(!$actiondone)
- {echo "Something went wrong :( <br> Enter correct password for that email address. <h6> Try again. </h6>";
-header("refresh:5; url=login.html");}
+ {
+   echo "Something went wrong :( <br> Enter correct password for that email address. <h6> Try again. </h6>";
+   header("refresh:5; url=login.html");
+ }
 
-
-
-
-
-
-
-
-
-
-
-  //$_SESSION['name'] = $_POST['name'];
   $_SESSION['email'] = $email;
 
   $conn->close();
 ?>
-<!--<!Doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title> Hello  </title>
-</head>
-<body>
-
-
-</body>
-</html>-->

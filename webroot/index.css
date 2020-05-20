@@ -9,31 +9,30 @@ body, html {
   height: 100%;
   margin: 0%;
 }
+
 /* For parallax effect ... put div class="parallax"....... write stuff........</div> then make another div
-to extend its effect like <div class=" parallax"></div> ...dont write anything in this div*/
+to extend its effect like <div class=" parallax"></div> ...dont write anything in this div ....merged parallax with overflow*/
 
 .overflow-auto {
-
-
-   /* Set a specific height */
-   height: 500px;
-
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+ /* Set a specific height */
+ height: 500px;
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
  }
 
-
+/* navbar background*/
 .bg-dark {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 ul {
   font-size: medium;
 }
 
+/*side bar*/
 #left {
   background-image: url("https://i.pinimg.com/736x/bd/23/16/bd2316a1967393783cb0ba3bf6f51b0a.jpg");
 }
@@ -41,7 +40,6 @@ ul {
 #left a {
   color: grey;
 }
-
 
 .sidenav {
   width: 130px;
@@ -73,11 +71,17 @@ ul {
   padding: 0px 10px;
 }
 
+/* sidenav for max-height: 450px*/
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
+/*For scrolling */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -99,7 +103,7 @@ ul {
 }
 
 
-
+/*general styles*/
 #aboutme, #skills, #portfolio, #edu, #experience {
   margin: 5%;
   border: 2px solid black;
@@ -109,7 +113,6 @@ ul {
   height: 17%;
   width: 110%;
   background-size: contain;
-
 }
 
 #aboutme {
@@ -118,14 +121,12 @@ ul {
   background: url("https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #edu {
   background: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi");
   background-repeat: no-repeat;
   background-size: cover;
-  /*height: 150vh;*/
 }
 
 #edu table {
@@ -202,11 +203,6 @@ button a {
   text-align: center;
 }
 
-
-
-
-
-
  body {
   font-size: 200%;
   text-align: center;
@@ -217,31 +213,7 @@ background-image: url("");
 
 }
 
-/*.container {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-} */
-
-
-
-
-
-article {
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 3%;
-  background-image: url("");
-  background-repeat: no-repeat;
-
-
-}
-
 section{
-
   margin: 3%;
 }
 
@@ -253,15 +225,13 @@ aside {
   background-image: url("");
   background: cover;
   background-repeat:  round;
-
 }
 
 
 footer {
   background-color: transparent;
   margin: 10%;
-    z-index: 1;
-    position: relative;
-font-size: 75%;
-
+  z-index: 1;
+  position: relative;
+  font-size: 75%;
 }
