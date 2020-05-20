@@ -67,7 +67,7 @@
                           else {
                             echo '<a style="font-size: 15px;  background: white;" href = "login.html">Login</a>
                             <p style="color: white; font-size: 50%; "> or </p>
-                            <a style="font-size: 15px;  background: white;" href = "signin.html">Signin</a>';
+                            <a style="font-size: 15px;  background: white;" href = "signin.html">Signup</a>';
                           }
                    ?>
           </aside>
